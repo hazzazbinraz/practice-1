@@ -46,7 +46,10 @@ nav a{
 nav a:hover{
     text-decoration: underline;
 }
+
+
 header, section {
+    
     margin: 2em auto;
     width: 75em 100%;
     background-color: var(--color-1);
@@ -61,6 +64,7 @@ header, section {
     gap: 3em;
 }
 header img {
+    
     max-width: 100%;
     border-radius: 1em;
     object-fit: cover;
@@ -104,4 +108,28 @@ section p{
 }
 section#my-work{
     background-color: var(--color-3);
+}
+.grid-container{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "img-1 img-1 img-2 img-3"
+    "img-1 img-1 img-4 img-5";
+    gap: 1em;
+}
+.grid-container img{
+    
+    height: 100%;
+    width: 100%;
+    border-radius: .5em;
+    transition: 100ms ease;
+}
+
+
+.grid-container img:hover{
+    scale: 1.05;
 }
