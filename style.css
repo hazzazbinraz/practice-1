@@ -133,3 +133,64 @@ section#my-work{
 .grid-container img:hover{
     scale: 1.05;
 }
+details{
+    margin-top: 1em;
+    background-color: var(--base-color);
+    border-radius: 1em;
+}
+details summary{
+    padding: 1em;
+    font-size: 1.7rem;
+    font-family: marriweather, poppins,  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+   ;
+}
+details p{
+    padding: 0 2em 2em 2em;
+}
+footer {
+    text-align: center;
+}
+footer a{
+    margin: 0 1em;
+    text-decoration: none;
+    color: var(--text-color);
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width: 988px){
+
+    header {
+        text-align: center;
+    }
+    header .text-container{
+        padding-top: 0;
+    }
+}
+@meadia(max-width: 640px) {
+    nav li{
+        display: none;
+    }
+    nav li:first-child,
+    nav li:last-child {
+        display: block;
+    }
+    header{
+        margin-top: 0;
+    }
+    .cta-button{
+        margin-top: .5em;
+        width: 100%;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-container p {
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1.5rem
+    }
+}
